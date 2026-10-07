@@ -11,7 +11,6 @@ photographs an e-device, identifies it with AI, and recommends
 | Sai Charitha | Project Manager / Scrum Master · Backend & AI Lead |
 | Tejesh | Frontend & UX Lead · QA / DevOps Lead |
 
-
 ## Quickstart (local development)
 
 **Prerequisites:** Python 3.12+, `pip`, Git. Optional: Docker.
