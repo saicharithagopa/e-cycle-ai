@@ -11,13 +11,14 @@ photographs an e-device, identifies it with AI, and recommends
 | Sai Charitha | Project Manager / Scrum Master · Backend & AI Lead |
 | Tejesh | Frontend & UX Lead · QA / DevOps Lead |
 
+
 ## Quickstart (local development)
 
 **Prerequisites:** Python 3.12+, `pip`, Git. Optional: Docker.
 
 ```bash
 # 1. Clone
-git clone <your-repo-url> e-cycle-ai
+git clone https://github.com/saicharithagopa/e-cycle-ai.git e-cycle-ai
 cd e-cycle-ai
 
 # 2. Create and activate a virtual environment
@@ -32,6 +33,9 @@ pip install -r requirements.txt
 
 # 5. Start the app (tables + seed data are created on startup)
 uvicorn e_cycle_ai.main:app --reload
+
+# 6. Verify it works: open http://127.0.0.1:8000/health
+#    You should see: {"status": "ok", "version": "0.2.0"}
 ```
 
 Open **http://127.0.0.1:8000** for the upload form and
@@ -41,7 +45,7 @@ Open **http://127.0.0.1:8000** for the upload form and
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `DATABASE_URL` | `sqlite:///./e_cycle_ai.db` | SQLAlchemy URL (use `postgresql://…` in production) |
+| `DATABASE_URL` | `sqlite:///./e_cycle_ai.db` | Database connection string |
 | `UPLOAD_MAX_MB` | `10` | Max upload size |
 | `IMAGE_RETENTION_HOURS` | `24` | Documented retention window (images are never persisted) |
 
